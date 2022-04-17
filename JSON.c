@@ -1,5 +1,10 @@
 #include "JSON.h"
+#ifndef external
 #include "Common-Code-For-C-Projects\memory.h"
+#endif
+#ifdef external
+#include "..\Common-Code-For-C-Projects\memory.h"
+#endif
 
 JSON_Element *CreateElement()
 {

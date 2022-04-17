@@ -1,7 +1,12 @@
 #ifndef JSON_H
 #define JSON_H
 
+#ifndef external
 #include "Common-Code-For-C-Projects\Common.h"
+#endif
+#ifdef external
+#include "..\Common-Code-For-C-Projects\memory.h"
+#endif
 
 #define SUCCESS 0x0
 #define SYNTAX_ERROR 0x1
